@@ -1,9 +1,93 @@
-<p>内个，大家好，这是我白某的个人网站，只是想试验一下</p>
-<p>咱就是闲着没事建个网站玩玩</p>
-<P>这是我个人的qq 3494644749</P>
-<p>刚建的网站，还不知道用来干啥，先下载个愤怒的逸康玩玩吧</p>
-<p>冒泡~，૮(˶ᵔ ᵕ ᵔ˶)ა</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteSharp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+        }
+        /* 头像样式 */
+        .avatar {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            margin-bottom: 24px;
+        }
+        /* 名字标题 */
+        .name-title {
+            font-size: 46px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 40px;
+        }
+        /* 按钮容器 */
+        .button-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        /* 通用按钮 */
+        .btn {
+            width: 260px;
+            height: 58px;
+            border: none;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            opacity: 0.85;
+            transform: scale(1.03);
+        }
+        /* 抖音按钮 */
+        .btn-douyin {
+            background-color: #b4eeb4; /*浅绿色背景*/
+            color: #0099dd; /*天蓝色文字*/
+        }
+        /* 小游戏按钮 */
+        .btn-game {
+            background-color: #ffc8c8; /*浅红色背景*/
+            color: #ff66aa; /*粉色文字*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 直接在线加载图片，无需上传图片！！ -->
+    <img class="avatar" src="https://p3-flow-image-sign.byteimg.com/tos-cn-i-a9rns2rl98/3010120089944048804.jpeg" alt="头像">
+    <h1 class="name-title">WhiteSharp</h1>
 
-<ul>
-  <li> <a href="https://wwnx.lanzoue.com/ixtQk0h00z4h">愤怒的逸康</a> </li>
-</ul>
+    <div class="button-wrap">
+        <button class="btn btn-douyin" onclick="showDouyin()">我的抖音</button>
+        <button class="btn btn-game" onclick="openGame()">自制小游戏</button>
+    </div>
+
+    <script>
+        // 抖音按钮弹窗
+        function showDouyin() {
+            alert("抖音名：不可思议");
+        }
+        // 跳转小游戏链接
+        function openGame() {
+            window.open("https://wwnx.lanzoue.com/ixtQk0h00z4h", "_blank");
+        }
+    </script>
+</body>
+</html>
